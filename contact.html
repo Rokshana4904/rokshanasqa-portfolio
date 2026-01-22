@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Rokshana</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="nav">
+    <div class="container nav-inner">
+
+      <a href="home.html" class="brand-mark" aria-label="Home">
+        <div class="double-square">
+          <span class="tech-square"></span>
+          <span class="tech-square small"></span>
+        </div>
+      </a>
+
+      <nav class="menu">
+        <a href="home.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="academic_Credentials.html">Academic Credentials</a>
+        <a href="certificates.html">Certificates</a>
+        <a class="active" href="contact.html">Contact</a>
+      </nav>
+
+      <a href="contact.html" class="nav-cta">GET STARTED</a>
+
+      <button class="menu-btn" aria-label="Open Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="home.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="academic_Credentials.html">Academic Credentials</a>
+      <a href="certificates.html">Certificates</a>
+      <a class="active" href="contact.html">Contact</a>
+      <a href="contact.html" class="mobile-cta">GET STARTED</a>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero contact-hero">
+    <div class="container page-hero-inner">
+      <p class="page-kicker">Let’s talk</p>
+      <h1 class="page-title">Contact</h1>
+      <p class="page-subtitle">
+        Send a message about your project, QA help, or internship opportunity.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact">
+    <div class="container contact-grid">
+
+      <!-- Left: Info -->
+      <div class="contact-info">
+        <h2 class="contact-title">Get in touch</h2>
+        <p class="contact-text">
+          I’m open to SQA internship opportunities, freelance testing, and collaboration.
+          You can email me or connect via social links.
+        </p>
+
+        <div class="contact-cards">
+          <div class="info-card">
+            <div class="info-ico"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:rokshana.cse.bd@gmail.com">rokshana.cse.bd@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-ico"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <h4>Location</h4>
+              <p>Dhaka, Bangladesh</p>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-ico"><i class="fa-brands fa-github"></i></div>
+            <div>
+              <h4>GitHub</h4>
+              <a href="https://github.com/Rokshana4904" target="_blank">github.com/Rokshana4904</a>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-ico"><i class="fa-brands fa-linkedin-in"></i></div>
+            <div>
+              <h4>LinkedIn</h4>
+              <a href="https://www.linkedin.com/in/rokshana-talukder-474287262" target="_blank">
+                linkedin.com/in/rokshana-talukder-474287262
+              </a>
+            </div>
+        </div>
+
+        <div class="contact-socials">
+          <a class="icon" href="https://github.com/Rokshana4904" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a class="icon" href="https://www.linkedin.com/in/rokshana-talukder-474287262" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a class="icon" href="mailto:rokshana.cse.bd@gmail.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a class="icon" href="https://www.facebook.com/rokshana.ratri.5" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: Form -->
+      <div class="contact-form-wrap">
+        <form class="contact-form" action="#" method="post">
+          <h3>Send a message</h3>
+
+          <div class="form-row">
+            <label for="name">Full Name</label>
+            <input id="name" type="text" name="name" placeholder="Your full name" required />
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email Address</label>
+            <input id="email" type="email" name="email" placeholder="your@email.com" required />
+          </div>
+
+          <div class="form-row">
+            <label for="subject">Subject</label>
+            <input id="subject" type="text" name="subject" placeholder="QA help / internship / project" />
+          </div>
+
+          <div class="form-row">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Write your message..." required></textarea>
+          </div>
+
+          <button class="btn primary btn-full" type="submit">
+            Send Message <i class="fa-solid fa-paper-plane"></i>
+          </button>
+
+          <p class="form-note">
+            *This form is UI only. If you want it to actually send messages, tell me (I’ll connect it using Formspree).
+          </p>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="simple-footer">
+    <div class="container footer-bar">
+
+      <div class="footer-left">
+        <div class="footer-brand">
+          <div class="double-square">
+            <span class="tech-square"></span>
+            <span class="tech-square small"></span>
+          </div>
+          <span class="footer-name">Rokshana Talukder Ratri</span>
+        </div>
+      </div>
+
+      <div class="footer-center">
+        © <span id="year"></span> Rokshana Talukder Ratri
+      </div>
+
+      <div class="footer-right">
+        <a href="terms.html">Terms of Services</a>
+        <div class="footer-icons">
+          <a href="https://www.facebook.com/rokshana.ratri.5" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/rokshana-talukder-474287262" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/Rokshana4904" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

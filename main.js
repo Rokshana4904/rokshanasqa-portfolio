@@ -2,73 +2,79 @@
    Ratri Portfolio - main.js
    ============================== */
 
-/* ---------- SMOOTH SCROLL ---------- */
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute("href"));
-    if (target) {
-      target.scrollIntoView({
-        behavior: "smooth",
-        block: "start"
-      });
-    }
-  });
-});
-
-/* ---------- ACTIVE NAV LINK ON SCROLL ---------- */
-const sections = document.querySelectorAll("section[id]");
-const navLinks = document.querySelectorAll(".menu a");
-
-window.addEventListener("scroll", () => {
-  let current = "";
-
-  sections.forEach(section => {
-    const sectionTop = section.offsetTop - 120;
-    const sectionHeight = section.offsetHeight;
-    if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
-      current = section.getAttribute("id");
-    }
-  });
-
-  navLinks.forEach(link => {
-    link.classList.remove("active");
-    if (link.getAttribute("href") === `#${current}`) {
-      link.classList.add("active");
-    }
-  });
-});
-
-/* ---------- HERO FADE-IN ANIMATION ---------- */
+/* ---------- HERO FADE-IN (only if hero exists) ---------- */
 window.addEventListener("load", () => {
   const heroItems = document.querySelectorAll(
-    ".avatar-ring, .hello, .title, .subtitle, .socials, .hero-buttons"
+    ".avatar-ring, .hello, .title, .subtitle, .socials"
   );
 
-  heroItems.forEach((item, index) => {
-    item.style.opacity = "0";
-    item.style.transform = "translateY(20px)";
-    item.style.transition = "all 0.6s ease";
+  if (heroItems.length) {
+    heroItems.forEach((item, index) => {
+      item.style.opacity = "0";
+      item.style.transform = "translateY(18px)";
+      item.style.transition = "opacity .6s ease, transform .6s ease";
 
-    setTimeout(() => {
-      item.style.opacity = "1";
-      item.style.transform = "translateY(0)";
-    }, index * 120);
-  });
+      setTimeout(() => {
+        item.style.opacity = "1";
+        item.style.transform = "translateY(0)";
+      }, index * 120);
+    });
+  }
 });
 
-/* ---------- SOCIAL ICON HOVER RIPPLE (SUBTLE) ---------- */
-document.querySelectorAll(".icon").forEach(icon => {
-  icon.addEventListener("mouseenter", () => {
-    icon.style.boxShadow = "0 18px 45px rgba(79,124,255,.35)";
-  });
-  icon.addEventListener("mouseleave", () => {
-    icon.style.boxShadow = "0 14px 35px rgba(79,124,255,.18)";
-  });
-});
+/* ---------- MOBILE MENU TOGGLE ---------- */
+const menuBtn = document.querySelector(".menu-btn");
+const mobileMenu = document.getElementById("mobileMenu");
 
-/* ---------- OPTIONAL: CONSOLE SIGNATURE ---------- */
+function closeMobileMenu() {
+  if (!mobileMenu) return;
+  mobileMenu.style.display = "none";
+  mobileMenu.dataset.open = "false";
+}
+
+function openMobileMenu() {
+  if (!mobileMenu) return;
+  mobileMenu.style.display = "block";
+  mobileMenu.dataset.open = "true";
+}
+
+if (menuBtn && mobileMenu) {
+  // initial state
+  mobileMenu.dataset.open = "false";
+
+  menuBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    const isOpen = mobileMenu.dataset.open === "true";
+    if (isOpen) closeMobileMenu();
+    else openMobileMenu();
+  });
+
+  // close when clicking any link inside menu
+  mobileMenu.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => closeMobileMenu());
+  });
+
+  // close when clicking outside
+  document.addEventListener("click", (e) => {
+    const clickedInside =
+      mobileMenu.contains(e.target) || menuBtn.contains(e.target);
+    if (!clickedInside) closeMobileMenu();
+  });
+
+  // close when window resizes (prevents stuck menu)
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 900) closeMobileMenu();
+  });
+}
+
+/* ---------- FOOTER YEAR ---------- */
+const yearEl = document.getElementById("year");
+if (yearEl) {
+  yearEl.textContent = new Date().getFullYear();
+}
+
+/* ---------- OPTIONAL CONSOLE SIGNATURE ---------- */
 console.log(
   "%cRokshana Talukder Ratri | SQA Portfolio",
-  "color:#4f7cff;font-size:14px;font-weight:bold;"
+  "color:#7fe0ff;font-size:14px;font-weight:bold;"
 );
