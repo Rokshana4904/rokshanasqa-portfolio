@@ -59,19 +59,4 @@ sqa-portfolio/
 ├── main.js
 ├── images/
 └── README.md
-## 📫 Contact
-- **Email:** rokshana.cse.bd@gmail.com  
-- **LinkedIn:** https://www.linkedin.com/in/rokshana-talukder-474287262  
-- **GitHub:** https://github.com/Rokshana4904  
-- **Facebook:** https://www.facebook.com/rokshana.ratri.5  
-
----
-
-⭐ *Thank you for visiting my portfolio!*
-
-- **GitHub:** https://github.com/Rokshana4904  
-- **Facebook:** https://www.facebook.com/rokshana.ratri.5  
-
----
-
-⭐ *Thank you for visiting my portfolio!*
+ 
