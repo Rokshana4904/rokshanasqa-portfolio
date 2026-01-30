@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Rokshana</title>
+
+  <!-- Main site CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="nav">
+    <div class="container nav-inner">
+
+      <!-- Brand -->
+      <a href="home.html" class="brand-mark" aria-label="Home">
+        <div class="double-square">
+          <span class="tech-square"></span>
+          <span class="tech-square small"></span>
+        </div>
+      </a>
+
+      <!-- Desktop Menu -->
+      <nav class="menu">
+        <a href="home.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="academic_Credentials.html">Academic Credentials</a>
+        <a href="certificates.html">Certificates</a>
+        <a href="skill.html">Skills</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="extra_curricular_activities.html">Extra Curricular Activities</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <!-- CTA Button -->
+      <a href="contact.html" class="nav-cta">GET STARTED</a>
+
+      <!-- Mobile button -->
+      <button class="menu-btn" aria-label="Open Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+    </div>
+
+    <!-- Mobile dropdown -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="home.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="academic_Credentials.html">Academic Credentials</a>
+      <a href="certificates.html">Certificates</a>
+      <a href="skill.html">Skills</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="extra_curricular_activities.html">Extra Curricular Activities</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="mobile-cta">GET STARTED</a>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero proj-hero">
+    <div class="container page-hero-inner">
+      <p class="page-kicker">MY WORK</p>
+      <h1 class="page-title">Projects</h1>
+      <p class="page-subtitle">
+        Selected QA projects with hands-on work in manual testing, API testing, and Selenium automation.
+      </p>
+
+      <!-- Quick chips -->
+      <div class="proj-chips">
+        <span class="proj-chip"><i class="fa-solid fa-vial-circle-check"></i> Manual Testing</span>
+        <span class="proj-chip"><i class="fa-solid fa-network-wired"></i> API Testing</span>
+        <span class="proj-chip"><i class="fa-solid fa-robot"></i> Automation Testing</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS CONTENT -->
+  <section class="projects">
+    <div class="container">
+
+      <div class="proj-grid">
+
+        <!-- Project 1 -->
+        <article class="proj-card">
+          <div class="proj-head">
+            <div class="proj-icon">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class="proj-title">
+              <h2>E-commerce Testing</h2>
+              <p>Manual testing + documentation + API testing</p>
+            </div>
+            <span class="proj-tag">Testing</span>
+          </div>
+
+          <ul class="proj-points">
+            <li>Designed detailed test scenarios, test cases, and bug reports for E-commerce web applications.</li>
+            <li>Documented results using Excel and Word.</li>
+            <li>Improved consistency and defect traceability through structured test planning.</li>
+          </ul>
+
+          <div class="proj-tools">
+            <span><i class="fa-solid fa-file-excel"></i> Excel</span>
+            <span><i class="fa-solid fa-file-word"></i> Word</span>
+            <span><i class="fa-solid fa-bug"></i> Bug Reporting</span>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="proj-card">
+          <div class="proj-head">
+            <div class="proj-icon">
+              <i class="fa-solid fa-cloud-arrow-up"></i>
+            </div>
+            <div class="proj-title">
+              <h2>API Testing</h2>
+              <p>Postman collections + workflows</p>
+            </div>
+            <span class="proj-tag">API</span>
+          </div>
+
+          <ul class="proj-points">
+            <li>Created and executed API test cases using Postman.</li>
+            <li>Performed functional, integration and regression testing.</li>
+            <li>Used environment variables, collections  and automated scripts to optimize workflows.</li>
+          </ul>
+
+          <div class="proj-tools">
+            <span><i class="fa-solid fa-paper-plane"></i> Postman</span>
+            <span><i class="fa-solid fa-layer-group"></i> Collections</span>
+            <span><i class="fa-solid fa-code"></i> Scripts</span>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="proj-card">
+          <div class="proj-head">
+            <div class="proj-icon">
+              <i class="fa-solid fa-robot"></i>
+            </div>
+            <div class="proj-title">
+              <h2>Selenium Automation Practice</h2>
+              <p>UI automation with JavaScript</p>
+            </div>
+            <span class="proj-tag">Automation</span>
+          </div>
+
+          <ul class="proj-points">
+            <li>Developed basic automated test scripts using Selenium with JavaScript.</li>
+            <li>Tested UI behavior, form validation and cross-browser functionality.</li>
+            <li>Implemented modular and reusable test functions to improve maintainability.</li>
+          </ul>
+
+          <div class="proj-tools">
+            <span><i class="fa-solid fa-gears"></i> Selenium</span>
+            <span><i class="fa-brands fa-js"></i> JavaScript</span>
+            <span><i class="fa-solid fa-diagram-project"></i> Reusable Functions</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="simple-footer">
+    <div class="container footer-bar">
+
+      <!-- Left -->
+      <div class="footer-left">
+        <div class="footer-brand">
+          <span class="footer-name">Rokshana Talukder Ratri</span>
+        </div>
+      </div>
+
+      <!-- Center -->
+      <div class="footer-center">
+        © <span id="year"></span> Rokshana Talukder Ratri
+      </div>
+
+      <!-- Right -->
+      <div class="footer-right">
+        <a href="terms.html">Terms of Services</a>
+
+        <div class="footer-icons">
+          <a href="https://www.facebook.com/rokshana.ratri.5" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/rokshana-talukder-474287262" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/Rokshana4904" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

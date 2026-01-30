@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skills | Rokshana</title>
+  <!-- Your main site CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+</head>
+
+<body class="skills-page">
+
+  <!-- NAVBAR (same as your other pages) -->
+  <header class="nav">
+    <div class="container nav-inner">
+
+      <!-- Brand -->
+      <a href="home.html" class="brand-mark" aria-label="Home">
+        <div class="double-square">
+          <span class="tech-square"></span>
+          <span class="tech-square small"></span>
+        </div>
+      </a>
+
+      <!-- Desktop Menu -->
+      <nav class="menu">
+        <a href="home.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="academic_Credentials.html">Academic Credentials</a>
+        <a href="certificates.html">Certificates</a>
+        <a href="skill.html" class="active">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="extra_curricular_activities.html">Extra Curricular Activities</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <!-- CTA Button -->
+      <a href="contact.html" class="nav-cta">GET STARTED</a>
+
+      <!-- Mobile button -->
+      <button class="menu-btn" aria-label="Open Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+    </div>
+
+    <!-- Mobile dropdown -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="home.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="academic_Credentials.html">Academic Credentials</a>
+      <a href="certificates.html">Certificates</a>
+      <a href="skill.html" class="active">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="extra_curricular_activities.html">Extra Curricular Activities</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="mobile-cta">GET STARTED</a>
+    </div>
+  </header>
+
+  <!-- SKILLS PAGE CONTENT (same format like About page section) -->
+  <section class="skills">
+    <div class="container">
+
+      <!-- Top -->
+      <div class="skills-hero">
+        <p class="skills-kicker">My Expertise</p>
+        <h1>Skills</h1>
+        <p class="skills-sub">
+          A realistic overview of the tools, technologies, and QA strengths I use to deliver reliable software.
+        </p>
+
+        <!-- Quick Highlights -->
+        <div class="skills-stats">
+          <div class="skills-stat">
+            <i class="fa-regular fa-circle-check"></i>
+            <div>
+              <h3>QA Focus</h3>
+              <p>Manual + Automation</p>
+            </div>
+          </div>
+
+          <div class="skills-stat">
+            <i class="fa-solid fa-bug"></i>
+            <div>
+              <h3>Testing</h3>
+              <p>Functional • Regression • API</p>
+            </div>
+          </div>
+
+          <div class="skills-stat">
+            <i class="fa-solid fa-code"></i>
+            <div>
+              <h3>Dev Tools</h3>
+              <p>Git • Debugging</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cards -->
+      <div class="skills-grid">
+
+        <!-- Programming -->
+        <div class="skills-card">
+          <div class="skills-card-head">
+            <div class="skills-icon"><i class="fa-solid fa-laptop-code"></i></div>
+            <div class="skills-title">
+              <h2>Programming Languages</h2>
+              <p>Coding and scripting used for testing and automation</p>
+            </div>
+          </div>
+
+          <div class="skills-bars">
+            <div class="skills-bar">
+              <div class="skills-label">
+                <span>Python</span><span class="skills-level">Intermediate</span>
+              </div>
+              <div class="skills-meter"><span style="width:75%"></span></div>
+            </div>
+
+            <div class="skills-bar">
+              <div class="skills-label">
+                <span>Java</span><span class="skills-level">Intermediate</span>
+              </div>
+              <div class="skills-meter"><span style="width:72%"></span></div>
+            </div>
+
+            <div class="skills-bar">
+              <div class="skills-label">
+                <span>JavaScript</span><span class="skills-level">Intermediate</span>
+              </div>
+              <div class="skills-meter"><span style="width:78%"></span></div>
+            </div>
+
+            <div class="skills-bar">
+              <div class="skills-label">
+                <span>C</span><span class="skills-level">Intermediate</span>
+              </div>
+              <div class="skills-meter"><span style="width:68%"></span></div>
+            </div>
+
+            <div class="skills-bar">
+              <div class="skills-label">
+                <span>SQL</span><span class="skills-level">Intermediate</span>
+              </div>
+              <div class="skills-meter"><span style="width:70%"></span></div>
+            </div>
+          </div>
+
+          <div class="skills-chips">
+            <span class="skills-chip"><i class="fa-brands fa-python"></i> Python</span>
+            <span class="skills-chip"><i class="fa-brands fa-java"></i> Java</span>
+            <span class="skills-chip"><i class="fa-brands fa-js"></i> JavaScript</span>
+            <span class="skills-chip"><i class="fa-brands fa-c"></i> C </span>
+            <span class="skills-chip"><i class="fa-solid fa-database"></i> SQL</span>
+          </div>
+        </div>
+
+        <!-- QA -->
+        <div class="skills-card">
+          <div class="skills-card-head">
+            <div class="skills-icon"><i class="fa-solid fa-vial-circle-check"></i></div>
+            <div class="skills-title">
+              <h2>Software Quality Assurance</h2>
+              <p>Testing practice and quality workflow</p>
+            </div>
+          </div>
+
+          <ul class="skills-list">
+            <li><i class="fa-solid fa-check"></i> Manual Testing</li>
+            <li><i class="fa-solid fa-check"></i> Test Scenario & Test Case Design</li>
+            <li><i class="fa-solid fa-check"></i> Bug Reporting & Tracking</li>
+            <li><i class="fa-solid fa-check"></i> Regression & Smoke Testing</li>
+            <li><i class="fa-solid fa-check"></i> API Testing (Postman)</li>
+            <li><i class="fa-solid fa-check"></i> Basic Automation (Selenium)</li>
+          </ul>
+
+          <div class="skills-chips">
+            <span class="skills-chip"><i class="fa-solid fa-bug"></i> Defect Tracking</span>
+            <span class="skills-chip"><i class="fa-solid fa-list-check"></i> Test Cases</span>
+            <span class="skills-chip"><i class="fa-solid fa-diagram-project"></i> Test Plans</span>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skills-card">
+          <div class="skills-card-head">
+            <div class="skills-icon"><i class="fa-solid fa-toolbox"></i></div>
+            <div class="skills-title">
+              <h2>Tools & Technologies</h2>
+              <p>Tools used for testing, tracking, and collaboration</p>
+            </div>
+          </div>
+
+          <ul class="skills-list">
+            <li><i class="fa-solid fa-check"></i> Postman</li>
+            <li><i class="fa-solid fa-check"></i> Selenium WebDriver</li>
+            <li><i class="fa-solid fa-check"></i> JIRA</li>
+            <li><i class="fa-solid fa-check"></i> MySQL</li>
+            <li><i class="fa-solid fa-check"></i> Git & GitHub</li>
+            <li><i class="fa-solid fa-check"></i> VS Code</li>
+          </ul>
+
+          <div class="skills-chips">
+            <span class="skills-chip"><i class="fa-solid fa-network-wired"></i> API</span>
+            <span class="skills-chip"><i class="fa-solid fa-code-branch"></i> Version Control</span>
+            <span class="skills-chip"><i class="fa-solid fa-terminal"></i> Debugging</span>
+          </div>
+        </div>
+
+        <!-- Strengths -->
+        <div class="skills-card">
+          <div class="skills-card-head">
+            <div class="skills-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <div class="skills-title">
+              <h2>Testing Strengths</h2>
+              <p>How I work with teams and ensure product quality</p>
+            </div>
+          </div>
+
+          <ul class="skills-list">
+            <li><i class="fa-solid fa-check"></i> Attention to Detail</li>
+            <li><i class="fa-solid fa-check"></i> Critical Thinking</li>
+            <li><i class="fa-solid fa-check"></i> Clear Documentation</li>
+            <li><i class="fa-solid fa-check"></i> Collaboration with Developers</li>
+            <li><i class="fa-solid fa-check"></i> Quality Mindset</li>
+          </ul>
+
+          <p class="skills-note">
+            I focus on preventing issues early, communicating clearly, and validating features against real user expectations.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER (same as your other pages) -->
+  <footer class="simple-footer">
+    <div class="container footer-bar">
+
+      <!-- Left -->
+      <div class="footer-left">
+        <div class="footer-brand">
+          <span class="footer-name">Rokshana Talukder Ratri</span>
+        </div>
+      </div>
+
+      <!-- Center -->
+      <div class="footer-center">
+        © <span id="year"></span> Rokshana Talukder Ratri
+      </div>
+
+      <!-- Right -->
+      <div class="footer-right">
+        <a href="terms.html">Terms of Services</a>
+
+        <div class="footer-icons">
+          <a href="https://www.facebook.com/rokshana.ratri.5" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/rokshana-talukder-474287262" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/Rokshana4904" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
